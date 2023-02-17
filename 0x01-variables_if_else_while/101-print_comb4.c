@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - Write a program that prints all possible different
  * combinations of three digits.
@@ -7,38 +8,28 @@
  */
 int main(void)
 {
-	int a = 0;
-	int b;
-	int c;
-	int a1;
-	int b1;
-	int c1;
+	int a, b, c;
 
-	while (a <= 98)
+	for (a = '0'; b < '9'; a++)
 	{
-		b = (a / 10 + '0');
-		c = (a % 10 + '0');
-		a1 = 0;
-		while (a1 <= 99)
+		for (b = a + 1; b <= '9'; b++)
 		{
-			b1 = (a1 / 10 + '0');
-			c1 = (a1 % 10 + '0');
-			if (a < a1)
+			for (c = b + 1; <= '9'; c++)
 			{
-				putchar(b);
-				putchar(c);
-				putchar(' ');
-				putchar(b1);
-				putchar(c1);
-				if (a != 98)
+				if ((b != a) != c)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					if (a == '7' && b == '8')
+					{
+						continue;
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
-			a1++;
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
