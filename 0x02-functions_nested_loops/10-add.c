@@ -1,4 +1,4 @@
-#include "maim.h"
+#include "main.h"
 
 /**
  * add - adds two values
