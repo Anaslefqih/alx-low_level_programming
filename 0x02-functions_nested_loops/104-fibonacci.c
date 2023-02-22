@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h>	/* printf */
+#include <string.h>	/* strlen, strcpy */
 
 /**
  * reverse_string - function that reverses the order of a string
+ *
+ * Description:
  * This function takes a string and reverses the order of its characters
  * in place and returns the reversed string.
  *
