@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2, sum = k;
+	unsigned long prev = 0, curr = 1, next, sum = 0;
 
-	while (k + j < 4000000)
+	while (curr <= 4000000)
 	{
-		k += j;
-		if (k % 2 == 0)
-			sum += k;
-			j = k - j;
-			++i;
+		next = prev + curr;
+		prev = curr;
+		curr = next;
+		if (curr % 2 == 0)
+			sum += curr;
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
+
 	return (0);
 }
