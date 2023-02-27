@@ -22,9 +22,9 @@ int main(void)
 		password[i] = rand() % 78;
 		m += (password[i] + '0');
 		putchar(password[i] + '0');
-		if ((2000 - m) - '0' < 78)
+		if ((2772 - m) - '0' < 78)
 		{
-			n = 2000 - m - '0';
+			n = 2772 - m - '0';
 			m += n;
 			putchar(n + '0');
 			break;
