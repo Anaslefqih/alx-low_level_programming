@@ -8,8 +8,8 @@ include "main.h"
 char *leet(char *str)
 {
 	int i, j;
-	char *dec = "aAeEoOtTlL";
-	char *enc = "4433007711";
+	char dec[] = "aAeEoOtTlL";
+	char enc[] = "4433007711";
 
 	for (i = 0; str[i]; i++)
 	{
