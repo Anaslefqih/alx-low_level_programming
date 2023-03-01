@@ -2,21 +2,21 @@ include "main.h"
 
 /**
  * leet - encodes a string into 1337
- * @str: string to encode
+ * @n: string to encode
  * Return: pointer to encoded string
  */
-char *leet(char *str)
+char *leet(char *n)
 {
 	int i, j;
 	char dec[] = "aAeEoOtTlL";
 	char enc[] = "4433007711";
 
-	for (i = 0; str[i]; i++)
+	for (i = 0; n[i]; i++)
 	{
 		for (j = 0; dec[j]; j++)
-			if (str[i] == dec[j])
-				str[i] = enc[j];
+			if (n[i] == dec[j])
+				n[i] = enc[j];
 	}
 
-	return (str);
+	return (n);
 }
