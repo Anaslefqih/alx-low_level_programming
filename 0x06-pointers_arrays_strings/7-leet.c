@@ -11,9 +11,9 @@ char *leet(char *n)
 	char dec[] = "aAeEoOtTlL";
 	char enc[] = "4433007711";
 
-	for (i = 0; n[i]; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (j = 0; dec[j]; j++)
+		for (j = 0; j < 10 ; j++)
 			if (n[i] == dec[j])
 				n[i] = enc[j];
 	}
