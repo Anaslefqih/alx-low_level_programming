@@ -1,12 +1,16 @@
-#include "main.h"
+include "main.h"
 
 /**
  * _puts - Prints a string, followed by a new line, to stdout.
  *
  * @str : The string to be printed.
  */
-int main(void)
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i = 0;
+
+	while (str[i])
+		_putchar(str[i++]);
+
+	_putchar('\n');
 }
